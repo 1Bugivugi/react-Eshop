@@ -4,9 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import PayPalButton from './PayPalButton';
 
-function CartTotals({ value, history }){
+function CartTotals({value}){
   const {cartSubTotal, cartTax, cartTotal, clearCart} = value;
   return (
     <React.Fragment>
@@ -43,11 +42,6 @@ function CartTotals({ value, history }){
               <strong>$ {cartTotal}
               </strong>
             </h5>
-            <PayPalButton
-              total={cartTotal}
-              clearCart={clearCart}
-              history={history}
-            />
           </Col>
         </Row>
       </Container>

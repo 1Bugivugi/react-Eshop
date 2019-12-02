@@ -22,10 +22,7 @@ class Cart extends Component { // eslint-disable-line react/prefer-stateless-fun
                   <Title name='your' title='cart' />
                   <CartColumns />
                   <CartList value={value} />
-                  <CartTotals
-                    value={value}
-                    history={this.props.history}
-                  />
+                  <CartTotals value={value} />
                 </React.Fragment>
               )
             } else {
